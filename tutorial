@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+<link rel="stykesheet" class="text/css" class="css/smita.css" class="css/global.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Tutorials</title>
+  </head>
+  <main>
+
+  <body>
+    <style>
+    
+  
+  .sidebar-container {
+    height: 100%;
+    position: fixed;
+    padding: 0px;
+    margin-top: -50px;
+    padding-top: 50px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar-header {
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar {
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+  }
+  /* Scrollable sidebar. */
+  
+  </style>
+            </head>
+            <div class="sidebar-container col-xs-3">
+                <div class="sidebar-header">
+                    <form class="form-inline">
+                        <input type="text" name="search" class="form-control" placeholder="Search"/>
+                    </form>
+                </div>
+                <div class="sidebar">
+                    <nav>
+                        <ul class="nav flex-column bg-pink mb-0">
+                            <li><h3>Test</h3></li>
+                            <li><h3>Test</h1></li>
+                            <li><h3>Test</h3></li>
+                            <li><h3>Test</h3></li>
+                            <li><h3>Test</h3></li>
+                            <li><h3>Test</h3></li>
+                            <li><h3>Test</h3></li>
+                            <li><h3>Test</h3></li>
+                            <li><h3>Test</h3></li>
+                            <li><h3>Test1</h3></li>
+                            <li><h3>Test2</h3></li>
+                            <li><h3>Test3</h3></li>
+                            <li><h3>Test4</h3></li>
+                            <li><h3>Test5</h3></li>
+                        </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.w3schools.com/java/java_encapsulation.asp">iCoder</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://www.w3schools.com/java/java_encapsulation.asp">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.w3schools.com/java/java_encapsulation.asp">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+       </div>
+      </div>
+     </nav>
+
+    <div class="page-content p-5" id="content">
+   
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      
+      /* Full-width input fields */
+      input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      
+      /* Set a style for all buttons */
+      button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      button:hover {
+        opacity: 0.8;
+      }
+      
+      /* Extra styles for the cancel button */
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+      
+      /* Center the image and position the close button */
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+      }
+      
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+      
+      .container {
+        padding: 16px;
+      }
+      
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+      
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+      }
+      
+      /* Modal Content/Box */
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+      
+      /* The Close Button (x) */
+      .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: red;
+        cursor: pointer;
+      }
+      
+      /* Add Zoom Animation */
+      .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+      }
+      
+      @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+      }
+        
+      @keyframes animatezoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+      }
+      
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+        span.psw {
+           display: block;
+           float: none;
+        }
+        .cancelbtn {
+           width: 100%;
+        }
+      }
+      </style>
+    
+        <div class="w3-main w3-light-grey" id="belowtopnav" style="margin-left: 220px; padding-top: 0px;">
+          <div class="w3-row w3-white">
+            <div class="w3-col l10 m12" id="main">
+              <div id="mainLeaderboard" style="overflow:hidden;">
+            
+      <h2>Modal Login Form</h2>
+      
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+      
+      <div id="id01" class="modal">
+        
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="LOGIN.jpg" alt=""img class="bd-placeholder-img">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      </body>
+  
+          </div>
+           <div class="w3-main w3-light-grey" id="belowtopnav" style="margin-left: 220px; padding-top: 0px;">
+            <div class="w3-row w3-white">
+              <div class="w3-col l10 m12" id="main">
+                <div id="mainLeaderboard" style="overflow:hidden;">
+              
+              
+            </div> 
+            <div class="page-content p-5" id="content">
+                
+              <div class="w3-clear nextprev">
+                <a class="btn btn-success" href="http://127.0.0.1:5500/index.html" role="button">Previous</a>
+                <a class="btn btn-success" href="http://127.0.0.1:5500/demo.html" role="button">Next</a>
+              <hr>
+                  <p>JAVA was developed by James Gosling at Sun Microsystems Inc in the year 1991, later acquired by Oracle Corporation. It is a simple programming language. 
+                    Java makes writing, compiling, and debugging programming easy. It helps to create reusable code and modular programs.</p>
+                  <hr>
+                  <p>Java is a class-based, object-oriented programming language and is designed to have as few implementation dependencies as possible. A general-purpose
+                     programming language made for developers to write once run anywhere that is compiled Java code can run on all platforms that support Java. Java applications are compiled to byte code that can run on any Java Virtual Machine. The syntax of Java is similar to c/c++.</p>
+                  <h2>History</h2>
+                  
+                  <History class=">History">
+                   
+                  </History>
+                  <p>Java’s history is very interesting. It is a programming language created in 1991. James Gosling, Mike Sheridan,
+                     and Patrick Naughton, a team of Sun engineers known as the Green team initiated the Java language in 1991. Sun
+                      Microsystems released its first public implementation in 1996 as Java 1.0. It provides no-cost -run-times on 
+                      popular platforms. Java1.0 compiler was re-written in Java by Arthur Van Hoff to strictly comply with its 
+                      specifications. With the arrival of Java 2, new versions had multiple configurations built for different types 
+                      of platforms.</p>
+                
+                      <p>In 1997, Sun Microsystems approached the ISO standards body and later formalized Java, but it soon withdrew from the process.
+                       At one time, Sun made most of its Java implementations available without charge, despite their proprietary
+                        software status. Sun generated revenue from Java through the selling of licenses for specialized products such as
+                         the Java Enterprise System. </p>
+                         <p>
+                          On November 13, 2006, Sun released much of its Java virtual machine as free, open-source software. On May 8, 2007, Sun finished the process, making all of its JVM’s core code available under open-source distribution terms.
+                          </p>
+                  <h3>java programs</h3>
+                  <ul class="points">
+                    <li><a href="#java-classes">Java classes</a></li>
+                    <li><a href="#java-Methods">Java methods</a></li>
+                    <li><a href="#java-File-Handling">Java File Hsndling</a></li>
+                    <li><a href="#java-Reference">Java Reference</a></li>
+                    <li><a href="#java-Tutorials">Java Tutorials</a></li>
+                    </ul>
+                    <h2 id="java-classes" class="h2padding"> java-classes</h2>
+                    <li > <a href="https://www.w3schools.com/java/java_classes.asp">java_class</a></li>
+                    <li> <a href="https://www.w3schools.com/java/java_class_attributes.asp">java_class_attributes</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_class_methods.asp">java_class_methods</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_constructors.asp">java_constructors</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_modifiers.asp"> java_modifiers</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_encapsulation.asp">java_encapsulation</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_packages.asp">java_packages</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_polymorphism.asp">java_polymorphism</a></li>
+    
+                    <h2 id="java-Methods" class="h2padding"> Java-methods</h2>
+                    <li > <a href="https://www.w3schools.com/java/java_methods.asp">java_methods</a></li>
+                    <li> <a href="https://www.w3schools.com/java/java_methods_param.asp">java_methods_parameter</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_methods_overloading.asp">java_methods_overloading</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_scope.asp">java_scope</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_recursion.asp"> java_recursion</a></li>
+                   
+                     <h2 id="java-File-Handling" class="h2padding"> java-File-Handling</h2>
+                     <li > <a href="https://www.w3schools.com/java/java_files.asp">java_files</a></li>
+                    <li> <a href="https://www.w3schools.com/java/java_files_create.asp">java_files_create</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_files_read.asp">java_files_read</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_files_delete.asp">java_files_delete</a></li>
+          
+                     <h2 id="java-Reference" class="h2padding"> java-Rference </h2>
+                     <li > <a href="https://www.w3schools.com/java/java_ref_keywords.asp">java_ref_keywords</a></li>
+                    <li> <a href="https://www.w3schools.com/java/java_ref_string.asp">java_ref_string</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_ref_math.asp">java_ref_math</a></li>
+                    
+                     <h2 id="java-Tutorials" class="h2padding"> java-Tutorials</h2>
+                     <li > <a href="https://www.w3schools.com/java/java_classes.asp">java_class</a></li>
+                    <li> <a href="https://www.w3schools.com/java/java_class_attributes.asp">java_class_attributes</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_class_methods.asp">java_class_methods</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_constructors.asp">java_constructors</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_modifiers.asp"> java_modifiers</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_encapsulation.asp">java_encapsulation</a></li>
+                    <li > <a href="https://www.w3schools.com/java/java_packages.asp">java_packages</a></li>
+    
+                  <h2>Inline HTML elements</h2>
+                  <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+                  <ul>
+                    <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+                    <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+                    <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+                    <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+                    <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+                    <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                  </ul>
+                  <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+                  <h2>Heading</h2>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <h3>Sub-heading</h3>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <pre><code>Example code block</code></pre>
+                  <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                </article>
+          
+                <article class="blog-post">
+                  <h2 class="blog-post-title">Another blog post</h2>
+                  <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+          
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <blockquote>
+                   
+                    <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+                  </blockquote>
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <h3>Example table</h3>
+                  <p>And don't forget about tables in these posts:</p>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Upvotes</th>
+                        <th>Downvotes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Alice</td>
+                        <td>10</td>
+                        <td>11</td>
+                      </tr>
+                      <tr>
+                        <td>Bob</td>
+                        <td>4</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>Charlie</td>
+                        <td>7</td>
+                        <td>9</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Totals</td>
+                        <td>21</td>
+                        <td>23</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+          
+                  <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                </article>
+          
+                <article class="blog-post">
+                  <h2 class="blog-post-title">New feature</h2>
+                  <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+          
+                  <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                  <ul>
+                    <li>First list item</li>
+                    <li>Second list item with a longer description</li>
+                    <li>Third list item to close it out</li>
+                  </ul>
+                  <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                </article>
+          
+                <nav class="blog-pagination" aria-label="Pagination">
+                  <div class="w3-clear nextprev">
+                    <a class="btn btn-success" href="http://127.0.0.1:5500/index.html" role="button">Previous</a>
+                    <a class="btn btn-success" href="http://127.0.0.1:5500/demo.html" role="button">Next</a>
+                  <hr>
+                </nav>
+          
+              </div>
+          
+             
+              <div class="col-md-4">
+                <div class="position-sticky" style="top: 2rem;">
+                  
+          
+                
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </main>
+          
+          
+          <footer class="blog-footer">
+           
+              <a href="#">Back to top</a>
+            
+          </footer>
+        </div>
+     
+            </div>
+        </div>
+    </div>
+             
+          <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+        
+      
+      </body>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+  </body>
+</html>
